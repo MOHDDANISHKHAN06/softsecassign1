@@ -73,18 +73,18 @@ public class OneGram {
 		
 		//System.out.println(prob_shift.size());
 		
-		HashMap<Double, Integer> value2dx = new HashMap<>();
+		HashMap<Double, Integer> value2idx = new HashMap<>();
 		
 		for(int i =0 ; i<26;i++)
 		{
-			value2dx.put(crln[i],i);
+			value2idx.put(crln[i],i);
 		}
 		Arrays.sort(crln);
 		
 		for(int i =25; i>=20;i--)
 		{
 			//System.out.println(value2dx.get(crln[i]));
-			String output = caesar_decrypt.decrypt(text,value2dx.get(crln[i]));
+			String output = caesar_decrypt.decrypt(text,value2idx.get(crln[i]));
 			//System.out.println("bef");
 			System.out.println(output);
 			//System.out.println("af");
