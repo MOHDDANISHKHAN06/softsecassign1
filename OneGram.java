@@ -16,7 +16,7 @@ public class OneGram {
 		int count[] = new int[26];
 		HashMap<Integer, Double> oneGram = new HashMap<>();
 		double[] crln = new double[26];
-		List<Integer> prob_shift = new ArrayList<>();
+		//List<Integer> prob_shift = new ArrayList<>();
 		oneGram.put('a'-'a',0.080);
 		oneGram.put('b'-'a',0.015);
 		oneGram.put('c'-'a',0.030);
