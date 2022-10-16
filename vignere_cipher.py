@@ -26,7 +26,7 @@ def decrypt(cipherText, key,asciiList):
     for i in range(len(cipherText)):
         k = asciiList.index(key[i])
         t = asciiList.index(cipherText[i])
-        temp = asciiList[(t-k) % len(asciiList)]
+        temp = asciiList[(t-k+len(asciiList)) % len(asciiList)]
         text.append(temp)
     return("" . join(text))
 
@@ -73,7 +73,6 @@ def vigenereEncrpytDecrypt(text, key, typ):
     return resultText
 
 plainText = input("Please input plain text or cipher text = ")
-print(plainText)
 key = input("Please input Key = ")
 encryptDecrypt = input('Provide "d" for decrypt or "e" for encrypt = ')
 vigenereEncrpytDecrypt(plainText,key,encryptDecrypt)
