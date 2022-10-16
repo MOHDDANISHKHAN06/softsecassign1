@@ -16,7 +16,7 @@ def decrypt(cipherText, key,asciiList):
     for i in range(len(cipherText)):
         k = asciiList.index(key[i])
         t = asciiList.index(cipherText[i])
-        temp = asciiList[(t-k) % len(asciiList)]
+        temp = asciiList[(t-k+len(asciiList)) % len(asciiList)]
         text.append(temp)
     return("" . join(text))
 
@@ -66,6 +66,8 @@ def keyFinder(pText,cText,asciiList):
                     else:
                         key = ''
                         break
+    if not key:
+        return "Key more than 3 characters or Key not found"
                     
                    
 
