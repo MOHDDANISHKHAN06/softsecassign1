@@ -1,0 +1,8 @@
+Plain Text = ARIZONASTATEUNIVERSITY
+Cipher text = EUCDRHEVNEWYYQCZHLWLNC
+Keys checked = A, B, C, D, E, EA, EB, EC, ED, EDA, EDB, EDC, EDD, EDE, EDF, EDG, EDH, EDI, EDJ, EDK, EDL, EDM, EDN, EDO, EDP, EDQ, EDR, EDS, EDT, EDU, 
+Actual key found = EDU
+Plain Text = COMPUTERSCIENCE
+Cipher text = GRGTXNIUMGLYRFY
+Keys checked = A, B, C, D, E, EA, EB, EC, ED, EDA, EDB, EDC, EDD, EDE, EDF, EDG, EDH, EDI, EDJ, EDK, EDL, EDM, EDN, EDO, EDP, EDQ, EDR, EDS, EDT, EDU, 
+Actual key found = EDU
