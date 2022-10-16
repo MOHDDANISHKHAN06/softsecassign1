@@ -60,6 +60,7 @@ def keyFinder(pText,cText,asciiList):
                             f.write("Keys checked = ")
                             for k in keys:
                                 f.write(k+", ")
+                            f.write("\nTotal number of keys checked = "+str(len(keys)))
                             f.write("\nActual key found = "+key+"\n")
                         return key
                     else:
@@ -70,11 +71,15 @@ def keyFinder(pText,cText,asciiList):
 
 plainText = 'ARIZONASTATEUNIVERSITY'
 cipherText = 'EUCDRHEVNEWYYQCZHLWLNC'
+print("Plain Text = "+plainText+"\nCipher Text = "+cipherText)
 with open('output.txt', 'w') as f:
     f.writelines("Plain Text = "+plainText+"\nCipher text = "+cipherText+"\n")
 key = keyFinder(plainText,cipherText,asciiList)
+print("KEY = "+key)
 plainText = 'COMPUTERSCIENCE'
 cipherText = 'GRGTXNIUMGLYRFY'
+print("Plain Text = "+plainText+"\nCipher Text = "+cipherText)
 with open('output.txt', 'a') as f:
     f.writelines("Plain Text = "+plainText+"\nCipher text = "+cipherText+"\n")
 key = keyFinder(plainText,cipherText,asciiList)
+print("KEY = "+key)
