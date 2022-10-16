@@ -12,7 +12,7 @@ public class swsec_q1 {
 		sc.close();
 		System.out.println("Text : " + text);
 		System.out.println("Shift : " + shift);
-		System.out.println("Cipher: " + encrypt(text, shift));
+		System.out.println(encrypt(text, shift));
 	}
 
 	public static String encrypt(String input, int shift) {
@@ -24,10 +24,9 @@ public class swsec_q1 {
 				char ch = (char) (((int) input.charAt(i) + shift - 65) % 26 + 65);
 				result += ch;
 			} else {
-				char ch = (char) (((int) input.charAt(i) + shift - 97) % 26 + 97);
-				result += ch;
+				return "Please input only uppercase characters";
 			}
 		}
-		return result;
+		return "Cipher: " + result;
 	}
 }
