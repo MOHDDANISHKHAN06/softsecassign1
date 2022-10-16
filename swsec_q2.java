@@ -19,7 +19,6 @@ public class swsec_q2 {
 		int count[] = new int[26];
 		HashMap<Integer, Double> oneGram = new HashMap<>();
 		double[] crln = new double[26];
-		List<Integer> prob_shift = new ArrayList<>();
 		HashMap<Integer, String> opMap = new HashMap<>();
 
 		oneGram.put('a' - 'a', 0.080);
@@ -70,11 +69,9 @@ public class swsec_q2 {
 					continue;
 				cr += frequency.get(c) * oneGram.get((c - 'a') - i);
 			}
-			if (cr > 0.05)
-				prob_shift.add(i);
 			crln[i] = cr;
-		}
 
+		}
 		HashMap<Double, Integer> value2idx = new HashMap<>();
 
 		for (int i = 0; i < 26; i++) {
