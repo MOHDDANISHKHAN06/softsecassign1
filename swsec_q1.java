@@ -18,6 +18,7 @@ public class swsec_q1 {
 	public static String performCaesar(String input, int shift, String choice) {
 		String result = new String();
 		input = input.toUpperCase();
+
 		if (choice.equals("e")) { // encryption
 			for (int i = 0; i < input.length(); i++) {
 				char ch = (char) (((int) input.charAt(i) + shift - 65) % 26 + 65);
